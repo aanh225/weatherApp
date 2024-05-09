@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import LocationSearch from './LocationSearch';
+import { LocationSearch } from './LocationSearch';
 import { WeatherDisplay } from './WeatherDisplay';
-import NewsDisplay from './NewsDisplay';
+import { NewsDisplay } from './NewsDisplay';
 
-const WeatherApp = () => {
+export const WeatherApp = () => {
     const [weatherData, setWeatherData] = useState(null);
 
     const handleLocationSubmit = async (input) => {
@@ -29,6 +29,4 @@ const WeatherApp = () => {
         </>
     );
 };
-
-export default WeatherApp;
 

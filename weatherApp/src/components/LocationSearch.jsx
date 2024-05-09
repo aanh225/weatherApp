@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 
-const LocationSearch = ({ onLocationSubmit }) => {
+export const LocationSearch = ({ onLocationSubmit }) => {
     const [input, setInput] = useState('');
 
     return (
@@ -24,5 +24,3 @@ const LocationSearch = ({ onLocationSubmit }) => {
         </>
     );
 };
-
-export default LocationSearch;

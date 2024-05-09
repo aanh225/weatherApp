@@ -1,6 +1,6 @@
-import React from 'react';
+import {React} from 'react';
 
-const WeatherDisplay = ({ weather }) => {
+export const WeatherDisplay = ({ weather }) => {
     const currentWeather = weather.current;
     const iconUrl = `https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`;
 
@@ -15,4 +15,3 @@ const WeatherDisplay = ({ weather }) => {
     );
 };
 
-export default WeatherDisplay;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const NewsDisplay = () => {
+export const NewsDisplay = () => {
     const [topStories, setTopStories] = useState([]);
 
     useEffect(() => {
@@ -35,4 +35,3 @@ const NewsDisplay = () => {
     );
 };
 
-export default NewsDisplay;
